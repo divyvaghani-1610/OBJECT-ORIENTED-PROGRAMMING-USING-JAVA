@@ -1,0 +1,101 @@
+import java.awt.*;
+//import java.awt.event.*;
+import java.awt.Graphics.*;
+class extra_1 extends Frame 
+{
+    extra_1()
+    {
+        setSize(300,300);
+        setVisible(true);
+        GridBagLayout grid = new GridBagLayout();
+        GridBagConstraints m1 = new GridBagConstraints();
+        setLayout(grid);
+        m1.fill = GridBagConstraints.HORIZONTAL; 
+		m1.gridwidth=3;
+        m1.gridx=2;
+        m1.gridy=0;
+        TextField a3 = new TextField("input");
+		this.add(a3,m1);
+		m1.gridwidth=1;
+        m1.gridx=3;
+        m1.gridy=0;
+		TextField t1 = new TextField(10);
+		this.add(t1,m1);
+		m1.gridwidth=1;
+        m1.gridx=0;
+        m1.gridy=1;
+        Label l3 = new Label("C:");
+		this.add(l3,m1);
+		m1.gridwidth=1;
+        m1.gridx=0;
+        m1.gridy=2;
+        Label l4 = new Label("F:");
+		this.add(l4,m1);
+		m1.gridwidth=1;
+        m1.gridx=0;
+        m1.gridy=3;
+        Label l5 = new Label("K:");
+		this.add(l5,m1);
+		CheckboxGroup g1 = new CheckboxGroup();
+		m1.gridwidth=1;
+        m1.gridx=1;
+        m1.gridy=1;
+		Checkbox c1 = new Checkbox("",g1,false);
+		this.add(c1,m1);
+		m1.gridwidth=1;
+        m1.gridx=1;
+        m1.gridy=2;
+		Checkbox c2 = new Checkbox("",g1,false);
+		this.add(c2,m1);
+		m1.gridwidth=1;
+        m1.gridx=1;
+        m1.gridy=3;
+		Checkbox c3 = new Checkbox("",g1,false);
+		this.add(c3,m1);
+		m1.gridwidth=1;
+        m1.gridx=4;
+        m1.gridy=1;
+        Label l6 = new Label("C:");
+		this.add(l6,m1);
+		m1.gridwidth=1;
+        m1.gridx=4;
+        m1.gridy=2;
+        Label l7 = new Label("F:");
+		this.add(l7,m1);
+		m1.gridwidth=1;
+        m1.gridx=4;
+        m1.gridy=3;
+        Label l8 = new Label("K:");
+		this.add(l8,m1);
+		CheckboxGroup g2 = new CheckboxGroup();
+		m1.gridwidth=1;
+        m1.gridx=5;
+        m1.gridy=1;
+		Checkbox c4 = new Checkbox("",g2,false);
+		this.add(c4,m1);
+		m1.gridwidth=1;
+        m1.gridx=5;
+        m1.gridy=2;
+		Checkbox c5 = new Checkbox("",g2,false);
+		this.add(c5,m1);
+		m1.gridwidth=1;
+        m1.gridx=5;
+        m1.gridy=3;
+		Checkbox c6 = new Checkbox("",g2,false);
+		this.add(c6,m1);
+		m1.gridwidth=1;
+        m1.gridx=2;
+        m1.gridy=4;
+        Label l9 = new Label("output");
+		this.add(l9,m1);
+		m1.gridwidth=1;
+        m1.gridx=3;
+        m1.gridy=4;
+		TextField t2 = new TextField(10);
+		this.add(t2,m1);
+		}
+    public static void main(String args[])
+    {
+        extra_1 e = new extra_1();
+    }
+}
